@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alpin.signup.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/signin" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp">
+
+        </View>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/signup" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_female"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f"/>
+        <ImageView
+            android:id="@+id/iv_male"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/iv_female"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/m"/>
+        <TextView
+            android:id="@+id/tv_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/iv_female"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:text="Male"
+            android:layout_toRightOf="@id/tv_f"
+            android:layout_below="@id/iv_male"/>
+
+
+    </RelativeLayout>
+<EditText
+    android:id="@+id/et_fname"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:layout_width="280dp"
+    android:inputType="textCapWords"
+    android:textColorHint="#e0e4e3"
+    android:layout_height="wrap_content"
+    android:hint="First name"/>
+    <EditText
+        android:id="@+id/et_lname"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColorHint="#e0e4e3"
+        android:inputType="textCapWords"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Last name"/>
+    <EditText
+        android:id="@+id/et_uname"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColorHint="#e0e4e3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Username or E-mail"/>
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:textColorHint="#e0e4e3"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <Button
+        android:onClick="submit"
+        android:id="@+id/btn_sign"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#78e3d4"
+        android:layout_marginTop="10dp"
+        android:text="sign up"/>
+
+</LinearLayout>
